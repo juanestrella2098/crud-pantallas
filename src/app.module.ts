@@ -10,7 +10,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(
-      process.env.MONGO_URL!
+      'mongodb://mongo:BBfIjuTjPWwCxCzIUyCDdLnxmqmAGIzf@mongodb.railway.internal:27017'
     ),
     PantallaModule,
   ],
